@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+
+}
+html{
+    background-color: #4689FA;
+}
+.main{
+    height: 100vh;
+    background-image: url(./bg-repeat.jpg);
+    background-repeat: repeat-x;
+ }
+.section{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .section .textos{
+    color: white;
+    text-align: justify;
+    margin-left: 50px;
+  
+}
+.main .section .textos p{
+      margin-top: 11px;
+      
+    }
+
+.main .section .painel-container{
+   background-color: white;
+   min-height: 378px;
+   width: 340px;
+   margin-right: 50px;
+   margin-left: 60px;
+   border: 1px solid #000000;
+   display: flex;
+   flex-direction: column;
+}
+
+.main .section .painel-container .inputs{
+    border: 1px solid #000000;
+    margin: 20px 20px 0px 20px;
+    width: 299px;
+    min-height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+.main .section .painel-container .inputs:focus {
+    outline: none; /* Remove a borda ao focar */
+}
+.main .section .painel-container .borda-vermelha{
+    border: 2px solid red;
+    
+}
+.main .section .painel-container .borda-verde{
+    border: 2px solid green;
+}
+
+
+.main .section .painel-container .text-area{
+      width: 299px;
+      min-height: 100px;
+      padding-bottom: 60px;
+}
+
+/* tirar seta seletora do type:number */
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+.main .section .painel-container .aviso-fixo{
+    margin-left: 15px;
+    margin-top: 7px;
+}
+.main .section .painel-container .aviso-red{
+  margin-left: 22px;
+  font-size: 12px;
+  color: red;
+  display: none;
+
+}
+.main .section .painel-container .red-mostrar{
+    display: block;
+}
+.main .section .painel-container .enviar{
+    background-color: #3CCC87;
+    border-radius: 4px;
+    color: white;
+    margin: 20px 20px 22px 20px;
+    border: none;
+    width: 299px;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0,3s ease-in-out;
+}
+
+.main .section .painel-container .enviar:active{
+     background-color: #F65F88;
+     box-shadow: 0px 0px 30px #F65F88;
+     
+}
+

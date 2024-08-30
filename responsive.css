@@ -1,0 +1,45 @@
+@media(max-width:621px){
+    .section{
+        flex-direction: column;
+    }
+    .main .section .textos{
+        margin-top: 25px;
+        margin-right: 70px;
+        margin-bottom: 20px;
+        }
+    .main .section .painel-container{
+    margin-bottom: 25px;
+    }
+
+}
+@media(max-width:425px){
+    .section{
+        flex-direction: column;
+    }
+    .main .section .textos p{
+       margin-bottom: 15px;   
+    }
+}
+@media(max-width:375px){
+    .main .section .painel-container{
+        margin-left: auto;
+        margin-right: auto;
+        }
+}
+@media(max-width:347px){
+    .main .section .painel-container{
+        max-width: 280px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .main .section .painel-container .inputs{
+            max-width: 235px;
+        }
+      .main .section .painel-container .enviar{
+        width: 235px;
+      }
+      .main .section .painel-container .text-area{
+        width: 235px;
+      }
+
+}
