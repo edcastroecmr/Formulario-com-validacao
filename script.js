@@ -1,4 +1,5 @@
 const pegarInputs = document.querySelectorAll(".inputs");
+const pegarbutton = document.querySelector(".enviar")
 
 let removerAviso = function(input) {
     // Remove o aviso do input específico
@@ -26,16 +27,11 @@ pegarInputs.forEach(input => {
             input.classList.remove("borda-verde");
             input.classList.add("borda-vermelha");
             addAviso(input);
+            pegarbutton.addEventListener("click", () => {
+                alert("preencha todos os campos 🙄!!")
+            
+            })
         }
     });
 });
-
-
-
-
-
-
-
-
-
 
